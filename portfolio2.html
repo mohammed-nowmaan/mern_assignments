@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #111;
+      color: #eee;
+    }
+    header {
+      background: #222;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00f0ff;
+      margin-bottom: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00f0ff;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #00f0ff;
+      border-bottom: 2px solid #00f0ff;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: #222;
+      padding: 20px;
+      flex: 1 1 200px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #222;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="myphoto.jpg" alt="Your Photo" class="profile-photo" />
+  <h1>MD Nowmaan</h1>
+  <p>Frontend Developer</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Home</h2>
+  <p>Welcome to my portfolio. I build clean, responsive, and user-friendly web applications using modern technologies.</p>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I'm a frontend developer based in Telangana, India. I have a passion for turning ideas into visually appealing websites.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">HTML & CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">React</div>
+    <div class="card">Tailwind</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <strong>E-commerce Site</strong>
+      <p>Built with React, Node.js, MongoDB</p>
+    </div>
+    <div class="card">
+      <strong>Task Manager</strong>
+      <p>Real-time app using Firebase & Vue</p>
+    </div>
+    <div class="card">
+      <strong>Portfolio Website</strong>
+      <p>This site built with HTML, CSS & JS</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: nowmaan@example.com</p>
+  <p>Phone: +91 7995793787</p>
+  <p>Location: Hyderabad, India</p>
+</section>
+
+<footer>
+  &copy; 2025 MD Nowmaan. All rights reserved.
+</footer>
+
+</body>
+</html>
